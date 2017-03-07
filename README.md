@@ -132,7 +132,7 @@ public class StepperActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        mStepperLayout = (StepperLayout) findViewById(R.id.stepperLayout);
+        mStepperLayout = (StepperLayout) findViewById(R.id.stepperLayout); //stepperLayout is in R.layout.main
         mStepperLayout.setAdapter(new MyStepperAdapter(getSupportFragmentManager(), this));
     }
 }
